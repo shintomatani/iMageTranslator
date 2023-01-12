@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <title>iMageTranslator</title>
+  <meta charset="utf-8">
+  <meta http-equiv="content-type" content="ja">
+  <link rel="stylesheet" href="./static/css/style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<header>
+  <h1>iMageTranslator</h1>
+</header>
+
+<main>
+<section id="upload">
+  <h2>Image Upload</h2>
+
+  <form method="post" enctype="multipart/form-data">
+    <p id="submit">
+      <label><input type="file" name="file" class="fileinput">写真を選択</label>
+      <span id="filename">選択されていません</span>
+      <label><input type="submit" value="Upload" name="file">翻訳する</label>
+    </p>
+  </form>
+</section>
+
+<section id="error">
+{% with errors = get_flashed_messages(with_categories=true) %}
+  {% if errors %}
+    <ul class="flashes">
+      {% for category, msg in errors %}
+        <li class="{{ category }}">{{ msg }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+</section>
+
+<section id="translate">
+  <h2>Translate</h2>
+
+  <div id="edit"><p>原文を確認・編集する</p></div>
+
+  <section id="orig_txt">
+    <h3><label for="orig">Original Text</label></h3>
+    <form method="post" enctype="multipart/form-data" accept-charset="UTF-8">
+      <textarea id="orig" name="text" maxlength="5000">{{ orig_txt }}</textarea>
+      <p><label><input type="submit" name="text" value="再翻訳">再翻訳</label></p>
+    </form>
+  </section>
+
+  <section id="trans_txt">
+    <h3><label for="trans">Japanese Text</label></h3>
+    <form>
+      <textarea id="trans" readonly="readonly">{{ tr_txt }}</textarea>
+    </form>
+  </section>
+</section>
+</main>
+
+<footer>
+  <p id="copyright">© 2022 Shin Tomatani All Rights Reserved.</p>
+</footer>
+
+<script type="text/javascript" src="./static/js/main.js" ></script>
+</body>
+</html>

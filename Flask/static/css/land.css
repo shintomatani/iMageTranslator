@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #E8E7E6;
+    color: #403f3e;
+    font-family: Sans-Serif;
+    text-align: center;
+}
+
+header {
+    background-color: #6d6c6a;
+    width: 100%;
+}
+
+main {
+    width: 361px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #6d6c6a;
+    width: 100%;
+    margin-top: auto;
+}
+
+footer p {
+    color: #faf9f8;
+}
+
+header h1 {
+    font-family: GEORGIA;
+    color: #faf9f8;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+section {
+    margin-top: 1em;
+}
+
+#salestalk {
+    position: relative;
+    background-image: url(./lanlogo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 361px;
+    height: 237px;
+}
+
+#salestalk h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    margin: 0 auto;
+    font-family: 'Rampart One', cursive;
+    tex-decoration: none;
+}
+
+#intro {
+    text-align: left;
+}
+
+#intro h2 {
+    text-align: center;
+    margin-bottom: 0.7em;
+}
+
+#intro img {
+    display: flex;
+    margin: 0 auto;
+    width: 50%;
+}
+
+#intro p {
+    text-indent: 1.5ex;
+    margin: 1em auto 0;
+    width: 280px;
+}
+
+#feature {
+}
+
+#feature h2 {
+    margin-bottom: 0.7em;
+}
+    
+#feature div {
+    width: 250px;
+    margin: 0 auto 1em;
+    border: 1px solid #403f3e;
+    border-radius: 10px;
+    word-break: break-all;
+}
+
+#feature div h3 {
+    margin-top: 7em;
+    margin-bottom: 1em;
+}
+
+#feature div p {
+    padding: 0 1em 1em;
+    text-align: left;
+}
+    
+div#account {
+    background-image: url(./1.png);
+    background-repeat: no-repeat;
+    background-position: top 30px left 50%;
+    background-size: 30%;
+}
+
+div#deepl {
+    background-image: url(./2.png);
+    background-repeat: no-repeat;
+    background-position: top 30px left 50%;
+    background-size: 30%;
+}
+
+div#simple {
+    background-image: url(./3.png);
+    background-repeat: no-repeat;
+    background-position: top 30px left 50%;
+    background-size: 30%;
+}
+    
+#use {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    margin: 1em auto;
+}
+
+#use h2,
+#use p#arrow {
+    display: none;
+}
+
+#use p#arrow {
+    display: none;
+}
+
+#use p#link {
+    background-color: #8a8987;
+    border: 1px solid #8a8987;
+    border-radius: 30px;
+    font-size: 15pt;
+    padding: 0.5em;
+}
+
+#use a {
+    color: #efedeb;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	text-align: center;
+	background-color: #E8E7E6;
+	color: #403f3e;
+	font-family: Sans-Serif;
+    }
+
+    header {
+	display: flex;
+	width: 100%;
+	background-color: #6d6c6a;
+	text-align: left;
+    }
+
+    main {
+	width: 768px;
+	margin: 0 auto;
+    }
+
+    footer {
+	margin-top: auto;
+	width: 100%;
+	height: 50px;
+	background-color: #6d6c6a;
+	text-align: center;
+    }
+
+    footer p {
+	color: #faf9f8;
+	line-height: 50px;
+    }
+
+    header h1 {
+	font-size: 1.5em;
+	font-family: GEORGIA;
+	color: #faf9f8;
+	margin: 0.5em;
+    }
+
+    h2 {
+	text-decoration: underline;
+    }
+
+    section {
+	margin-top: 3em;
+    }
+
+    #salestalk {
+	position: relative;
+	background-image: url(./lanlogo.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	width: 768px;
+	height: 504px;
+    }
+
+    #salestalk h2 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform : translate(-50%,-50%);
+	transform : translate(-50%,-50%);
+	margin: 0 auto;
+	font-size: 40pt;
+	font-family: 'Rampart One', cursive;
+	text-decoration: none;
+	width: 100%;
+    }
+
+    #intro {
+	text-align: left;
+    }
+
+    #intro h2 {
+	text-align: center;
+	margin-bottom: 0.7em;
+    }
+
+    #intro img {
+	display: flex;
+	margin: 0 auto;
+	width: 50%;
+    }
+
+    #intro p {
+	text-indent: 1.5ex;
+	margin: 1em auto 0;
+	width: 500px;
+    }
+
+    #feature {
+    }
+
+    #feature h2 {
+	margin-bottom: 0.5em;
+    }
+    
+    #feature div {
+	float: left;
+	position: relative;
+	left: 4.5%;
+	width: 200px;
+	min-height: 400px;
+	margin: 0 3em 0 0;
+	border: 1px solid #403f3e;
+	border-radius: 10px;
+	word-break: break-all;
+    }
+
+    #feature div h3 {
+	margin-top: 7em;
+	margin-bottom: 1em;
+    }
+
+    #feature div p {
+	padding: 0 1em 1em;
+	text-align: left;
+    }
+    
+    div#account {
+	background-image: url(./1.png);
+	background-repeat: no-repeat;
+	background-position: top 30px left 50%;
+	background-size: 30%;
+    }
+
+    div#deepl {
+	background-image: url(./2.png);
+	background-repeat: no-repeat;
+	background-position: top 30px left 50%;
+	background-size: 30%;
+    }
+
+    div#simple {
+	background-image: url(./3.png);
+	background-repeat: no-repeat;
+	background-position: top 30px left 50%;
+	background-size: 30%;
+    }
+    
+    #use {
+	position: static;
+	clear: both;
+	padding-top: 3em;
+	margin-bottom: 3em;
+    }
+
+    #use h2,
+    #use p#arrow {
+	display: block;
+    }
+    
+    #use h2 {
+	margin-bottom: 0.7em;
+    }
+
+    #use p#link {
+	margin: 1em auto 0;
+	padding: 1em 0;
+	width: 400px;
+	background-color: #8a8987;
+	border: 1px solid #8a8987;
+	border-radius: 30px;
+    }
+
+    #use a {
+	color: #efedeb;
+    }
+}

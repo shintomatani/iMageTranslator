@@ -1,0 +1,5 @@
+deepl
+flask
+gunicorn
+Pillow
+pyocr
