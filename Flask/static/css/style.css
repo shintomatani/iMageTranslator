@@ -97,6 +97,31 @@ div#edit p {
   margin-bottom: 1em;
 }
 
+#orig_txt label {
+  display: inline-block;
+  position: relative;
+  background-color: #6d6c6a;
+  color: #faf9f8;
+  font-size: 10pt;
+  padding: 10px 18px;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+#orig_txt label:hover {
+  background-color: #a19f9d;
+  transition: all 0.4s;
+}
+
+#orig_txt input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+
 #orig_txt p {
   margin-top: 0.5em;
 }
